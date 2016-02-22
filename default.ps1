@@ -29,6 +29,9 @@ Task Clean {
     Write-Host "Doing clean up before starting a build!";
 
     exec { msbuild "$solution_file" '/t:Clean' };
+
+    Remove-Item -Path $output_dir -Recurse -Force -ErrorAction ("SilentlyContinue");
+    New-Item -Path $output_dir -itemType directory
 }
 
 Task IncrementVersion {

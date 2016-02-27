@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DerVerein
+namespace DerVerein.Views
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für StartView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartView : UserControl
     {
-        public MainWindow()
+        public StartView()
         {
             InitializeComponent();
         }

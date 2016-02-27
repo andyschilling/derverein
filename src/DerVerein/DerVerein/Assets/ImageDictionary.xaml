@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ImageSource x:Key="CameraLarge">camera_48x48.png</ImageSource>
+
+    <ImageSource x:Key="CameraMedium">camera_36x36.png</ImageSource>
+
+    <ImageSource x:Key="CameraSmall">camera_24x24.png</ImageSource>
+</ResourceDictionary>

@@ -1,0 +1,27 @@
+﻿<controls:MetroWindow x:Class="DerVerein.Views.Shell"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:mvvm="http://prismlibrary.com/"
+                      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                      xmlns:common="clr-namespace:DerVerein.Common"
+                      mc:Ignorable="d" mvvm:ViewModelLocator.AutoWireViewModel="True"
+                      WindowTransitionsEnabled="False"
+                      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+                      Background="{DynamicResource MaterialDesignPaper}"					  
+                      GlowBrush="{DynamicResource AccentColorBrush}"					  
+                      FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+                      Title="{Binding ApplicationName}" SaveWindowPosition="True"
+                      Icon="{StaticResource CameraMedium}">
+    <materialDesign:DialogHost x:Name="RootDialog" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                               Identifier="RootDialog">
+        <DockPanel LastChildFill="True">
+            <materialDesign:ColorZone Mode="PrimaryLight" Padding="16" DockPanel.Dock="Top" />
+
+            <ContentControl mvvm:RegionManager.RegionName="{x:Static common:RegionNames.MainRegion}" />
+        </DockPanel>
+    </materialDesign:DialogHost>
+</controls:MetroWindow>
+

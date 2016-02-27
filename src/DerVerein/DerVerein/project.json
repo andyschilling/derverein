@@ -3,7 +3,7 @@
     "net452": {}
   },
   "runtimes": {
-    "win": { },
+    "win": {},
     "win-anycpu": {
       "#import": [
         "win"
@@ -18,8 +18,16 @@
       "#import": [
         "win"
       ]
-
     },
-    "dependencies": { }
+    "dependencies": {}
+  },
+  "dependencies": {
+    "MahApps.Metro": "1.2.4",
+    "MaterialDesignThemes": "1.5.0-ci502",
+    "MaterialDesignThemes.MahApps": "0.0.4",
+    "Newtonsoft.Json": "8.0.2",
+    "Prism.Core": "6.1.0",
+    "Prism.Unity": "6.2.0-pre3",
+    "Prism.Wpf": "6.1.1-pre2"
   }
 }
